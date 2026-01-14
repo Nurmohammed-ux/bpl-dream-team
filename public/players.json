@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "pl-001",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/n8bHdCnL/sakib-fasibad.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-handed",
+    "bowlingType": "Left-arm orthodox spin",
+    "biddingPriceUSD": 1500000
+  },
+  {
+    "playerId": "pl-002",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/cP4Dgy9/m-rahim.webp",
+    "role": "Wicket-Keeper Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm off break",
+    "biddingPriceUSD": 1300000
+  },
+  {
+    "playerId": "pl-003",
+    "name": "Najmul Hossain Shanto",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/0VpGrTLk/shanto.webp",
+    "role": "Batsman",
+    "battingType": "Left-handed",
+    "bowlingType": "None",
+    "biddingPriceUSD": 1100000
+  },
+  {
+    "playerId": "pl-004",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/4RRKJdPw/mustafiz.webp",
+    "role": "Bowler",
+    "battingType": "Left-handed",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPriceUSD": 1200000
+  },
+  {
+    "playerId": "pl-005",
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/C5xJFkHw/taskin.webp",
+    "role": "Bowler",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm fast",
+    "biddingPriceUSD": 1150000
+  },
+  {
+    "playerId": "pl-006",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/1YpfLHhR/riyad.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Off spin",
+    "biddingPriceUSD": 1050000
+  },
+  {
+    "playerId": "pl-007",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/KjZ9Jqjw/dalal-tamim.webp",
+    "role": "Batsman",
+    "battingType": "Left-handed",
+    "bowlingType": "None",
+    "biddingPriceUSD": 1400000
+  },
+  {
+    "playerId": "pl-008",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/TxmNHnHS/kohli.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm medium",
+    "biddingPriceUSD": 1700000
+  },
+  {
+    "playerId": "pl-009",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/L3N3W8D/babar.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "None",
+    "biddingPriceUSD": 1600000
+  },
+  {
+    "playerId": "pl-010",
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co.com/4v4MLtw/root.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm off spin",
+    "biddingPriceUSD": 1450000
+  },
+  {
+    "playerId": "pl-011",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/hx6PtBmd/williamson.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Off spin",
+    "biddingPriceUSD": 1400000
+  },
+  {
+    "playerId": "pl-012",
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/RG0DPcd8/warner.webp",
+    "role": "Batsman",
+    "battingType": "Left-handed",
+    "bowlingType": "Right-arm leg spin",
+    "biddingPriceUSD": 1350000
+  },
+  {
+    "playerId": "pl-013",
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://i.ibb.co.com/4Z3qZbpK/stockes.webp",
+    "role": "All-Rounder",
+    "battingType": "Left-handed",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPriceUSD": 1500000
+  },
+  {
+    "playerId": "pl-014",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/FL5RFJY0/rashid.webp",
+    "role": "Bowler",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm leg spin",
+    "biddingPriceUSD": 1300000
+  },
+  {
+    "playerId": "pl-015",
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "image": "https://i.ibb.co.com/Mxg8DTvr/villegers.webp",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "None",
+    "biddingPriceUSD": 1650000
+  }
+]
