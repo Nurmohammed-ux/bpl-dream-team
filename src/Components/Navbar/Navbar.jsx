@@ -2,7 +2,7 @@ import React from "react";
 import navImg from "../../assets/logo.png";
 import dollarImg from "../../assets/Currency.png";
 
-const Navbar = () => {
+const Navbar = ({ availableBalance }) => {
   return (
     <div>
       <div className="navbar container mx-auto px-8 md:px-16">
@@ -53,8 +53,8 @@ const Navbar = () => {
             <a className="mr-12 cursor-pointer">Teams</a>
             <a className="mr-12 cursor-pointer">Schedules</a>
           </div>
-          <a className="btn bg-white font-medium">
-            <span>6000000000</span>
+          <a className="btn bg-white font-medium rounded-xl">
+            <span>{availableBalance}</span>
             <span>Coin</span>
             <span>
               <img src={dollarImg} alt="$" />
