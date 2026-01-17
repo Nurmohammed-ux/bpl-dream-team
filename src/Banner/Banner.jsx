@@ -27,10 +27,10 @@ const Banner = () => {
           Assemble Your Ultimate Dream 11 Cricket Team
         </h3>
         <p className="my-4 text-lg">Beyond Boundaries Beyond Limits</p>
-        <div className="border-2 border-black rounded-xl inline-block">
+        <div className="border border-black rounded-xl inline-block">
           <button
             className="btn px-6 py-2 rounded-xl font-semibold text-black
-  bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400
+  bg-linear-to-r from-pink-400 via-orange-400 to-yellow-400
   shadow-[0_0_15px_rgba(236,72,153,0.45)]
   border-2 border-white"
           >

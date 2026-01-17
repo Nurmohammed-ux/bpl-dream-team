@@ -46,12 +46,12 @@ const Navbar = ({ availableBalance }) => {
           {/* Logo */}
           <img className="h-18 w-[73.5px]" src={navImg} alt="Logo" />
         </div>
-        <div className="navbar-end gap-2">
+        <div className="navbar-end gap-1">
           <div className="hidden md:flex items-center">
-            <a className="mr-12 cursor-pointer">Home</a>
-            <a className="mr-12 cursor-pointer">Fixture</a>
-            <a className="mr-12 cursor-pointer">Teams</a>
-            <a className="mr-12 cursor-pointer">Schedules</a>
+            <a className="mr-11 cursor-pointer">Home</a>
+            <a className="mr-11 cursor-pointer">Fixture</a>
+            <a className="mr-11 cursor-pointer">Teams</a>
+            <a className="mr-11 cursor-pointer">Schedules</a>
           </div>
           <a className="btn bg-white font-medium rounded-xl">
             <span>{availableBalance}</span>

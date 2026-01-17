@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 import Banner from "./Banner/Banner";
 import CardContainerHeader from "./CardContainer/CardContainerHeader";
+import Footer from "./Components/Footer/Footer";
 
 const playersPromise = fetch("/players.json").then((response) =>
   response.json()
@@ -51,6 +52,7 @@ function App() {
           />
         )}
       </Suspense>
+      <Footer/>
     </>
   );
 }
