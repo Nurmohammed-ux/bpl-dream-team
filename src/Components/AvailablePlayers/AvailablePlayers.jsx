@@ -1,5 +1,6 @@
-import React, { use } from "react";
+import React, { use, useEffect } from "react";
 import AvailablePlayer from "../AvailablePlayer/AvailablePlayer";
+import { getStoredId } from "../LocalStorage/LocalStorage";
 
 const AvailablePlayers = ({
   playersPromise,
@@ -9,6 +10,17 @@ const AvailablePlayers = ({
   setPurchasedPlayers,
 }) => {
   const players = use(playersPromise);
+
+  useEffect(() => {
+    const savedIds = getStoredId();
+    if (savedIds.length > 0 && purchasedPlayers.length === 0) {
+      const restoredPlayers = savedIds
+        .map((playerId) => players.find((p) => p.playerId === playerId))
+        .filter(Boolean);
+      setPurchasedPlayers(restoredPlayers);
+    }
+  }, [players, setPurchasedPlayers, purchasedPlayers.length]);
+
   return (
     <div className="container mx-auto px-8 md:px-16">
       <div className="mt-8 grid grid-cols-1 sm:place-items-center md:grid-cols-3 gap-8">

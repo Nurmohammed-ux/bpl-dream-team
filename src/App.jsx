@@ -6,6 +6,7 @@ import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 import Banner from "./Banner/Banner";
 import CardContainerHeader from "./CardContainer/CardContainerHeader";
 import Footer from "./Components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 const playersPromise = fetch("/players.json").then((response) =>
   response.json()
@@ -45,14 +46,15 @@ function App() {
           />
         ) : (
           <SelectedPlayers
-            setToggle={setToggle}
             purchasedPlayers={purchasedPlayers}
             setPurchasedPlayers={setPurchasedPlayers}
             setAvailableBalance={setAvailableBalance}
+            setToggle={setToggle}
           />
         )}
       </Suspense>
       <Footer/>
+      <ToastContainer/>
     </>
   );
 }

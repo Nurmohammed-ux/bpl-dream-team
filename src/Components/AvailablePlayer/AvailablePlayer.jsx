@@ -1,6 +1,8 @@
 import React from "react";
 import userLogo from "../../assets/user-1.png";
 import location from "../../assets/report-1.png";
+import { toast } from "react-toastify";
+import { addStoredId } from "../LocalStorage/LocalStorage";
 
 const AvailablePlayer = ({
   player,
@@ -22,28 +24,29 @@ const AvailablePlayer = ({
   } = player;
 
   const isAlreadySelected = purchasedPlayers.find(
-    (player) => player.playerId === playerId
+    (PurchasedPlayer) => PurchasedPlayer.playerId === playerId
   );
 
   const handleChoosePlayer = () => {
     // Validation : Already Selected
     if (isAlreadySelected) {
-      alert("Player already selected!");
+      toast("Player already selected!");
       return;
     }
 
     // Validation : Max player reached
     if (purchasedPlayers.length >= 6) {
-      alert("You can only select 6 players.");
+      toast("You can only select 6 players.");
       return;
     }
 
     if (availableBalance < biddingPriceUSD) {
-      alert("Your Available Balance is Lower than Player Price");
+      toast("Your Available Balance is Lower than Player Price");
       return;
     }
     setAvailableBalance((previous) => previous - biddingPriceUSD);
     setPurchasedPlayers([...purchasedPlayers, player]);
+    addStoredId(player.playerId);
   };
 
   return (

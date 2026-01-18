@@ -1,5 +1,6 @@
 import React from "react";
 import SelectedPlayer from "../Components/SelectedPlayer/SelectedPlayer";
+import { removeStoredId } from "../Components/LocalStorage/LocalStorage";
 
 const SelectedPlayers = ({
   purchasedPlayers,
@@ -11,10 +12,11 @@ const SelectedPlayers = ({
   const handleRemovePlayer = (player) => {
     console.log("Remove connected", player);
     const remainingPurchasedPlayer = purchasedPlayers.filter(
-      (purchasedPlayer) => purchasedPlayer.playerId !== player.playerId
+      (purchasedPlayer) => purchasedPlayer.playerId !== player.playerId,
     );
     setPurchasedPlayers(remainingPurchasedPlayer);
     setAvailableBalance((previous) => previous + player.biddingPriceUSD);
+    removeStoredId(player.playerId);
   };
 
   return (
@@ -24,9 +26,17 @@ const SelectedPlayers = ({
           key={player.playerId}
           player={player}
           handleRemovePlayer={handleRemovePlayer}
-          setToggle={setToggle}
         />
       ))}
+      <div className="border inline-block mt-12 rounded-xl">
+        <button
+          disabled={purchasedPlayers.length >= 6}
+          onClick={() => setToggle(true)}
+          className={`border-4 border-white px-5 py-2 font-medium rounded-xl ${purchasedPlayers.length >= 6 ? "bg-white text-gray-500" : "bg-[#E7FE29]"}`}
+        >
+          Add More Player
+        </button>
+      </div>
     </div>
   );
 };

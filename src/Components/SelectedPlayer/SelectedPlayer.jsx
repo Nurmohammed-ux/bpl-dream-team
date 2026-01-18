@@ -1,7 +1,7 @@
 import React from "react";
 import deleteImg from "../../assets/frame.png";
 
-const SelectedPlayer = ({ player, handleRemovePlayer, setToggle }) => {
+const SelectedPlayer = ({ player, handleRemovePlayer }) => {
   // console.log(player);
   const { image, name, battingType } = player;
   return (
@@ -20,14 +20,7 @@ const SelectedPlayer = ({ player, handleRemovePlayer, setToggle }) => {
           src={deleteImg}
           alt="Delete"
         />
-      </div>
-      <div className="border inline-block mt-12 rounded-xl">
-        <button
-          onClick={() => setToggle(true)}
-          className="bg-[#E7FE29] border-4 border-white px-5 py-2 font-medium rounded-xl"
-        >
-          Add More Player
-        </button>
+
       </div>
     </div>
   );
